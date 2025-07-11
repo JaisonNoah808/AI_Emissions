@@ -21,31 +21,32 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-gray-900 min-h-screen text-gray-100">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b">
+    <nav class="bg-gray-950 shadow-sm border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0 flex items-center">
-                        <h1 class="text-xl font-bold text-gray-900">🌍 AI Emissions Viewer</h1>
+                        <h1 class="text-xl font-bold text-gray-100">🌍 AI Emissions Viewer</h1>
                     </div>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <a href="#overview" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Overview</a>
-                    <a href="#emissions" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Emissions</a>
-                    <a href="#water" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Water Usage</a>
-                    <a href="#tips" class="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Tips</a>
+                    <a href="#overview" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Overview</a>
+                    <a href="#emissions" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Emissions</a>
+                    <a href="#water" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Water Usage</a>
+                    <a href="#tips" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Tips</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <div class="gradient-bg text-white py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="relative py-20" style="background-image: url('images/iceberg.jpg'); background-size: cover; background-position: center 40%;">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 text-white text-center">
             <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                Understanding AI's Climate Impact 🌍
+                Understanding AI's Climate Impact
             </h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
                 Explore the environmental cost of artificial intelligence and learn how to use AI responsibly
@@ -62,52 +63,52 @@
     </div>
 
     <!-- Overview Section -->
-    <section id="overview" class="py-16 bg-white">
+    <section id="overview" class="py-16 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">The Hidden Cost of AI</h2>
-                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold text-gray-100 mb-4">The Hidden Cost of AI</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
                     Artificial intelligence models require massive computational power, leading to significant carbon emissions and water consumption. Understanding these impacts is crucial for responsible AI development and usage.
                 </p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="card-hover bg-gradient-to-br from-red-50 to-red-100 p-6 rounded-xl">
-                    <div class="text-red-600 text-3xl mb-4">🔥</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Carbon Emissions</h3>
-                    <p class="text-gray-600">Training large AI models can emit as much CO2 as 5 cars driven for a year.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl">
+                    <div class="text-red-400 text-3xl mb-4">🔥</div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Carbon Emissions</h3>
+                    <p class="text-gray-300">Training large AI models can emit as much CO2 as 5 cars driven for a year.</p>
                 </div>
-                <div class="card-hover bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl">
-                    <div class="text-blue-600 text-3xl mb-4">💧</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Water Usage</h3>
-                    <p class="text-gray-600">Data centers consume billions of gallons of water for cooling systems.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl">
+                    <div class="text-blue-400 text-3xl mb-4">💧</div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Water Usage</h3>
+                    <p class="text-gray-300">Data centers consume billions of gallons of water for cooling systems.</p>
                 </div>
-                <div class="card-hover bg-gradient-to-br from-green-50 to-green-100 p-6 rounded-xl">
-                    <div class="text-green-600 text-3xl mb-4">⚡</div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Energy Consumption</h3>
-                    <p class="text-gray-600">AI training can use as much electricity as a small city for months.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl">
+                    <div class="text-green-400 text-3xl mb-4">⚡</div>
+                    <h3 class="text-xl font-semibold text-gray-100 mb-2">Energy Consumption</h3>
+                    <p class="text-gray-300">AI training can use as much electricity as a small city for months.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Emissions Section -->
-    <section id="emissions" class="py-16 bg-gray-50">
+    <section id="emissions" class="py-16 bg-gray-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">AI Training Emissions Comparison</h2>
-                <p class="text-lg text-gray-600">Comparing carbon emissions from AI model training to everyday activities</p>
+                <h2 class="text-3xl font-bold text-gray-100 mb-4">AI Training Emissions Comparison</h2>
+                <p class="text-lg text-gray-300">Comparing carbon emissions from AI model training to everyday activities</p>
             </div>
             
             <div class="grid lg:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Carbon Emissions by AI Model</h3>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-4">Carbon Emissions by AI Model</h3>
                     <div class="h-80">
                         <canvas id="emissionsChart"></canvas>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Comparison with Daily Activities</h3>
+                <div class="bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-100 mb-4">Comparison with Daily Activities</h3>
                     <div class="h-80">
                         <canvas id="comparisonChart"></canvas>
                     </div>
@@ -117,15 +118,15 @@
     </section>
 
     <!-- Water Usage Section -->
-    <section id="water" class="py-16 bg-white">
+    <section id="water" class="py-16 bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Water Consumption in AI</h2>
-                <p class="text-lg text-gray-600">Data centers require massive amounts of water for cooling and operation</p>
+                <h2 class="text-3xl font-bold text-gray-100 mb-4">Water Consumption in AI</h2>
+                <p class="text-lg text-gray-300">Data centers require massive amounts of water for cooling and operation</p>
             </div>
             
-            <div class="bg-white p-6 rounded-xl shadow-sm">
-                <h3 class="text-xl font-semibold text-gray-900 mb-4">Water Usage Trends</h3>
+            <div class="bg-gray-800 p-6 rounded-xl shadow-sm">
+                <h3 class="text-xl font-semibold text-gray-100 mb-4">Water Usage Trends</h3>
                 <div class="h-96 overflow-hidden">
                     <canvas id="waterChart" style="max-height: 320px !important;"></canvas>
                 </div>
@@ -134,53 +135,53 @@
     </section>
 
     <!-- Tips Section -->
-    <section id="tips" class="py-16 bg-gray-50">
+    <section id="tips" class="py-16 bg-gray-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-4">Responsible AI Usage Tips</h2>
-                <p class="text-lg text-gray-600">How to minimize your AI carbon footprint</p>
+                <h2 class="text-3xl font-bold text-gray-100 mb-4">Responsible AI Usage Tips</h2>
+                <p class="text-lg text-gray-300">How to minimize your AI carbon footprint</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="card-hover bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-green-600 text-2xl mb-4">🌱</div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Choose Efficient Models</h3>
-                    <p class="text-gray-600">Use smaller, more efficient AI models when possible. They often provide similar results with much lower environmental impact.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div class="text-green-400 text-2xl mb-4">🌱</div>
+                    <h3 class="text-lg font-semibold text-gray-100 mb-2">Choose Efficient Models</h3>
+                    <p class="text-gray-300">Use smaller, more efficient AI models when possible. They often provide similar results with much lower environmental impact.</p>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-blue-600 text-2xl mb-4">⚡</div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Use Green Computing</h3>
-                    <p class="text-gray-600">Choose cloud providers that use renewable energy sources for their data centers.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div class="text-blue-400 text-2xl mb-4">⚡</div>
+                    <h3 class="text-lg font-semibold text-gray-100 mb-2">Use Green Computing</h3>
+                    <p class="text-gray-300">Choose cloud providers that use renewable energy sources for their data centers.</p>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-purple-600 text-2xl mb-4">🔄</div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Batch Processing</h3>
-                    <p class="text-gray-600">Process multiple requests together rather than making individual API calls to reduce overhead.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div class="text-purple-400 text-2xl mb-4">🔄</div>
+                    <h3 class="text-lg font-semibold text-gray-100 mb-2">Batch Processing</h3>
+                    <p class="text-gray-300">Process multiple requests together rather than making individual API calls to reduce overhead.</p>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-orange-600 text-2xl mb-4">📊</div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Monitor Usage</h3>
-                    <p class="text-gray-600">Track your AI usage and set limits to avoid unnecessary computational waste.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div class="text-orange-400 text-2xl mb-4">📊</div>
+                    <h3 class="text-lg font-semibold text-gray-100 mb-2">Monitor Usage</h3>
+                    <p class="text-gray-300">Track your AI usage and set limits to avoid unnecessary computational waste.</p>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-red-600 text-2xl mb-4">♻️</div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Reuse Results</h3>
-                    <p class="text-gray-600">Cache and reuse AI responses when possible instead of regenerating the same content.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div class="text-red-400 text-2xl mb-4">♻️</div>
+                    <h3 class="text-lg font-semibold text-gray-100 mb-2">Reuse Results</h3>
+                    <p class="text-gray-300">Cache and reuse AI responses when possible instead of regenerating the same content.</p>
                 </div>
-                <div class="card-hover bg-white p-6 rounded-xl shadow-sm">
-                    <div class="text-teal-600 text-2xl mb-4">🌍</div>
-                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Support Green AI</h3>
-                    <p class="text-gray-600">Advocate for and support companies developing more environmentally friendly AI technologies.</p>
+                <div class="card-hover bg-gray-800 p-6 rounded-xl shadow-sm">
+                    <div class="text-teal-400 text-2xl mb-4">🌍</div>
+                    <h3 class="text-lg font-semibold text-gray-100 mb-2">Support Green AI</h3>
+                    <p class="text-gray-300">Advocate for and support companies developing more environmentally friendly AI technologies.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-950 text-gray-300 py-12 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h3 class="text-2xl font-bold mb-4">🌍 AI Emissions Dashboard</h3>
+                <h3 class="text-2xl font-bold mb-4 text-gray-100">🌍 AI Emissions Dashboard</h3>
                 <p class="text-gray-400 mb-6">Raising awareness about AI's environmental impact</p>
                 <div class="flex justify-center space-x-6">
                     <a href="#" class="text-gray-400 hover:text-white transition-colors">About</a>

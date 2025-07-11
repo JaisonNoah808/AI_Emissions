@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌍 AI Emissions Dashboard
 
 A modern, interactive web application that visualizes the environmental impact of artificial intelligence, including carbon emissions, water usage, and comparisons with everyday activities.
@@ -147,3 +148,7 @@ For questions or suggestions about this AI emissions dashboard, feel free to rea
 ---
 
 **Note**: This dashboard is designed for educational purposes to raise awareness about AI's environmental impact. The data presented is based on research estimates and should be used for informational purposes only. 
+=======
+# AI_Emissions
+Project to bring light to AI emissions 
+>>>>>>> 9a1078eab24bc46e39b6049661f24bed973fa96e

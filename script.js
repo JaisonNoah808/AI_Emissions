@@ -102,12 +102,14 @@ function initializeEmissionsChart() {
 // Comparison Chart
 function initializeComparisonChart() {
     const ctx = document.getElementById('comparisonChart').getContext('2d');
-    
+    const rawData = [780, 4.6, 0.986, 0.85, 0.022];
+    const logData = rawData.map(x => Math.log10(x + 1)); // log scale
+
     const comparisonData = {
         labels: ['GPT-4 Training', 'Car (1 year)', 'Flight (NYC-London)', 'Home (1 month)', 'Smartphone (1 year)'],
         datasets: [{
-            label: 'CO2 Emissions (tons)',
-            data: [780, 4.6, 0.986, 0.85, 0.022],
+            label: 'CO2 Emissions (log scale)',
+            data: logData,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.8)',
                 'rgba(54, 162, 235, 0.8)',
@@ -132,16 +134,6 @@ function initializeComparisonChart() {
         options: {
             responsive: true,
             maintainAspectRatio: false,
-            animation: {
-                duration: 1000,
-                easing: 'easeInOutQuart'
-            },
-            layout: {
-                padding: {
-                    top: 20,
-                    bottom: 20
-                }
-            },
             plugins: {
                 legend: {
                     position: 'bottom',
@@ -153,7 +145,9 @@ function initializeComparisonChart() {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return `${context.label}: ${context.parsed} tons CO2`;
+                            // Show both log and original value
+                            const original = rawData[context.dataIndex];
+                            return `${context.label}: ${original} tons CO2`;
                         }
                     }
                 }
